@@ -12,7 +12,8 @@ body {
 }
 
 section {
-  height: 1080px;
+  height: 100vh;
+  padding-top: 90px;
 }
 
 h1 {
@@ -27,10 +28,6 @@ h2 {
   opacity: 30%;
   font-weight: normal;
   text-align: center;
-}
-
-.header {
-  padding-top: 87px;
 }
 
 .header .num-stats-container {
@@ -241,6 +238,7 @@ h2 {
 }
 
 .map-info {
+  border: 2px solid red;
   width: 50%;
 }
 
@@ -308,7 +306,7 @@ svg path:hover {
 }
 
 .symptoms h1 {
-  margin-bottom: 35px;
+  margin-bottom: 34px;
 }
 
 .symptoms-box {

@@ -21,7 +21,8 @@ body {
     background-color: $background-color;
 }
 section {
-    height: 1080px;
+    height: 100vh;
+    padding-top: 90px;
 }
 
 h1 {
@@ -39,7 +40,6 @@ h2 {
 }
 
 .header {
-    padding-top: 87px;
 
     .num-stats {
         &-container {
@@ -194,13 +194,14 @@ h2 {
     }
 }
 
-
 .map {
+    
     display: flex;
     &-graphic {
         width: 50%;
     }
     &-info {
+        border: 2px solid red;;
         width: 50%;
         &-main_ul {
             font-size: 20px;
@@ -255,8 +256,10 @@ svg path:hover{
     fill: green;
 }
 
-.symptoms h1 {
-    margin-bottom: 35px;
+.symptoms {
+    & h1 {
+        margin-bottom: 34px;
+    }
 }
 .symptoms-box {
     width: 60%;

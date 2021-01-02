@@ -196,59 +196,57 @@ h2 {
 
 
 .map {
-    margin-top: 120px;
     display: flex;
-}
-.map-graphic {
-    width: 50%;
-}
-.map-info {
-    width: 50%;
-}
-.map-info-header {
-    font-size: 51px;
-    color: rgba(40, 39, 84, 1);
-    font-weight: bold;
-    margin-bottom: 30px;
-}
-.map-info-main-ul {
-    font-size: 20px;
-    font-weight: bold;
-    color: rgba(40, 39, 84, 0.5);
-    margin-bottom: 20px;
-}
-.map-info-main-ul i {
-    font-size: 40px;
-    color: rgba(40, 39, 84, 1);
-    transform: translateY(10%);
-}
-.map-info-main-ul span {
-    display: inline-block;
-    font-size: 30px;
-    color: rgba(40, 39, 84, 1);
-    transform: translateY(10%);
-}
-.map-info-sec-ul {
-    font-size: 20px;
-    font-weight: bold;
-    margin-bottom: 20px;
-}
-.map-info-sec-ul span {
-    font-size: 30px;
-    display: inline-block;
-    transform: translateY(5%);
+    &-graphic {
+        width: 50%;
+    }
+    &-info {
+        width: 50%;
+        &-main_ul {
+            font-size: 20px;
+            font-weight: bold;
+            color: $secondary-color;
+            margin-bottom: 30px;
+            &-icon {
+                font-size: 40px;
+                transform: translateY(7px);
+
+            }
+            &-stat {
+                font-size: 30px;
+                display: inline-block;
+                transform: translateY(4px);
+                margin-left: 5px;
+            }
+        }
+        &-sec_ul {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            & span {
+                font-size: 30px;
+                display: inline-block;
+                transform: translateY(5%);
+            }
+        }
+    }
+    & h1 {
+        text-align: left;
+        margin-bottom: 30px;
+    }
+    
 }
 .bullet-purple {
-    color: #7A5AF7;
+    color: $purple;
 }
 .bullet-red {
-    color: #F9345E;
+    color: $red;
 }
 .bullet-green {
-    color: #20E620;
+    color: $green;
 }
 svg {
-    fill: red;
+    fill: rgb(20, 18, 18);
 }
 svg path {
     fill: red;
@@ -257,10 +255,6 @@ svg path:hover{
     fill: green;
 }
 
-.symptoms {
-    margin-top: 120px;
-    padding-bottom: 170px;
-}
 .symptoms h1 {
     margin-bottom: 35px;
 }
